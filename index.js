@@ -82,6 +82,7 @@ function increaseScoreByThree(teamClass){
 
 function resetTimer(){
     time = startMinutes * 60
+    clearInterval(intervalID)
     intervalID = setInterval(() => {
         updateTimer()
     }, 1000);
