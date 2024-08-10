@@ -1,0 +1,121 @@
+@font-face{
+    font-family:"ScoreBoard";
+    src: url("../fonts/CursedTimerUlil-Aznm.ttf"), format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.main{
+    width: 575px;
+    margin: 0 auto;
+    background-color: #043450;
+    border-bottom: 10px solid #ee6730;
+    border-top: 20px solid #ee6730;
+    box-shadow: 0 0 4px black;
+    border-radius: 10px;
+    margin: 40px auto 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 575px;
+    height: 385px;
+    align-items: center;
+    
+}
+
+.timer{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer .team-scoreboard{
+    height: 50px;
+    border: none;
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+#time{
+    font-size: 50%;
+}
+
+.extra-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#reset-btn{
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 12px;
+    color: #fff
+}
+
+.team-header{
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    border-radius: 4px;
+    border: 4px solid white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.team-scoreboard{
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    font-family: ScoreBoard, serif;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ec294c;
+    border: 4px solid #9AABD8;
+    border-radius: 5px;
+}
+
+.team-scoreboard p{
+    padding-top: 15px;
+}
+
+
+.team-buttons{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+
+
+button{
+    height: 45px;
+    width: 45px;
+    border: 2px solid #9AABD8;
+    background-color: #1B244A;
+    color: #e0e2e7;
+    font-family: ScoreBoard, serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+}

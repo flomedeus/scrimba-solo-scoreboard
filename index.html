@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="timer">
+                <div class="team-scoreboard">
+                    <p id="time"></p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="team">
+                    <h3 class="team-header">HOME</h3>
+                    <div class="team-scoreboard">
+                        <p id="team1-score"></p>
+                    </div>
+                    <div class="team-buttons">
+                        <button class="team1" onclick="increaseScoreByOne(this.getAttribute('class'))">+1</button>
+                        <button class="team1" onclick="increaseScoreByTwo(this.getAttribute('class'))">+2</button>
+                        <button class="team1" onclick="increaseScoreByThree(this.getAttribute('class'))">+3</button>
+                    </div>
+                </div>
+                <div class="team">
+                    <h3 class="team-header">GUEST</h3>
+                    <div class="team-scoreboard">
+                        <p id="team2-score"></p>
+                    </div>
+                    <div class="team-buttons">
+                        <button class="team2" onclick="increaseScoreByOne(this.getAttribute('class'))">+1</button>
+                        <button class="team2" onclick="increaseScoreByTwo(this.getAttribute('class'))">+2</button>
+                        <button class="team2" onclick="increaseScoreByThree(this.getAttribute('class'))">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-button">
+                <button id="reset-btn" onclick="resetTimer()">NEXT QUARTER</button>
+                <button id="reset-btn" onclick="resetGame()">NEW GAME</button>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
